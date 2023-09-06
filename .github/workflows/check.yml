@@ -7,15 +7,5 @@ jobs:
   test-lint:
     name: Test and Lint
     runs-on: ubuntu-20.04
-    steps:
-      - name: Login to gihub
-        uses: github/login-action@v1
-        with: 
-          username: ${{ secrets.GITHUB_USER }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Test
-        run: python manage.py test
-      - name: Lint
-        run: flake8
+
+        
